@@ -2,7 +2,14 @@
 
 void free_st(stack_t **stack)
 {
-    stack_t *tmp;
+  stack_t *tmp;
+
+  if(*stack == NULL)
+    {
+      return;
+    }
+  
+
 
     do{
         tmp = *stack;
