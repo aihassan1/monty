@@ -37,7 +37,8 @@ void linef(unsigned int lin, char *buffer, stack_t **stack)
         fprintf(stderr, "L%d: unknown instruction %s\n", lin, opcode);
 
         free_st(stack);
-	/* free(buffer);*/
+	/* we may need to remove the next line */
+	 free(buffer);
         exit(EXIT_FAILURE);
     }
 }
