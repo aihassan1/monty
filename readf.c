@@ -15,6 +15,6 @@ void readf(FILE *fp, stack_t **stack)
     {
       linef(i, buffer, stack);
       free(buffer);
-      buffer = NULL
+      buffer = NULL;
 	}
 }
