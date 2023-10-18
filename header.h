@@ -39,4 +39,10 @@ typedef struct instruction_s
 
 void readf(FILE *fp);
 void linef(size_t lin, char *buffer);
+
+void pint (stack_t **stack, unsigned int line_number);
+void pop(stack_t **stack, unsigned int line_number);
+void swap(stack_t **stack, unsigned int line_number);
+void add(stack_t **stack, unsigned int line_number);
+
 #endif
