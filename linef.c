@@ -15,12 +15,12 @@ void linef(unsigned int lin, char *buffer, stack_t **stack)
     {"nop", nop}, {NULL, NULL}};
 
     j = 0;
-    opcode = strtok(buffer, "\n $");
+    opcode = strtok(buffer, "\n ");
     if (opcode == NULL)
         return;
     if (strcmp(opcode, "push") == 0)
     {
-        value = strtok(NULL, "\n $");
+        value = strtok(NULL, "\n ");
         push_item(stack, value);
         j = 1;
     };
