@@ -9,7 +9,7 @@
 void print_all(stack_t **stack, unsigned int line_nu)
 {
 	stack_t *p;
-	
+
 	(void)line_nu;
 	if (stack == NULL || *stack == NULL)
 		exit(EXIT_FAILURE);

@@ -11,10 +11,10 @@ void linef(unsigned int lin, char *buffer, stack_t **stack)
 	int i, j;
 	char *opcode, *value;
 	instruction_t array[] = {
-		{"pall", print_all},{"add", add},
-		{"pint", pint},{"pop", pop}, {"swap", swap},
+		{"pall", print_all}, {"add", add},
+		{"pint", pint}, {"pop", pop}, {"swap", swap},
 		{"nop", nop}, {NULL, NULL}};
-	
+
 	j = 0;
 	opcode = strtok(buffer, "\n ");
 	if (opcode == NULL)
