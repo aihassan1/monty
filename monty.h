@@ -38,12 +38,6 @@ typedef struct instruction_s
 	void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 
-
-/**
- * void readf(FILE *fp);
- * void linef(size_t lin, char *buffer);
- */
-
 void linef(unsigned int lin, char *buffer, stack_t **stack);
 void readf(FILE *fp, stack_t **stack);
 void free_st(stack_t **stack);
