@@ -59,5 +59,6 @@ void mul(stack_t **stack, unsigned int line_number);
 void mood(stack_t **stack, unsigned int line_number);
 
 void pchar(stack_t **stack, unsigned int line_number);
+void pstr(stack_t **stack, unsigned int line_number);
 
 #endif

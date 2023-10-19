@@ -40,3 +40,29 @@ void pchar(stack_t **stack, unsigned int line_number)
 	}
 	printf("%c\n", (*stack)->n);
 }
+/**
+ * pstr - prints string
+ * @stack: A pointer to the stack.
+ * @line_number: The line number of the instruction.
+ */
+
+void pstr(stack_t **stack, unsigned int line_number)
+{
+	stack_t *tmp;
+
+	(void)line_number;
+	if (*stack == NULL)
+	{
+		printf("\n");
+		return;
+	}
+	tmp = *stack;
+	while (tmp)
+	{
+		if (tmp->n <= 0 || tmp->n > 127)
+			break;
+		printf("%c", tmp->n);
+		tmp = tmp->next;
+	}
+	printf("\n");
+}

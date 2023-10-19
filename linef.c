@@ -15,7 +15,7 @@ void linef(unsigned int lin, char *buffer, stack_t **stack)
 		{"pint", pint}, {"pop", pop}, {"swap", swap},
 		{"nop", nop}, {"sub", sub}, {"div", diiv},
 		{"mul", mul}, {"mod", mood}, {"pchar", pchar},
-		{NULL, NULL}};
+		{"pstr", pstr}, {NULL, NULL}};
 
 	opcode = strtok(buffer, "\n ");
 	if (opcode == NULL || opcode[0] == '#')
