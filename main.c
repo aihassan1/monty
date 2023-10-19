@@ -9,7 +9,7 @@
 
 int main(int argc, char *argv[])
 {
-	stack_t *stack;
+	stack_t *stack = NULL;
 	FILE *fp;
 
 	if (argc != 2)
@@ -23,14 +23,9 @@ int main(int argc, char *argv[])
 		fprintf(stderr, "Error: Can't open file %s\n", argv[1]);
 		exit(EXIT_FAILURE);
 	}
-	stack = malloc(sizeof(stack_t));
-	if (!stack)
-	{
-		fprintf(stderr, "Error: malloc failed\n");
-		exit(EXIT_FAILURE);
-	}
 	readf(fp, &stack);
-	free_st(&stack);
+	if (stack)
+		free_st(&stack);
 	fclose(fp);
 	return (0);
 }

@@ -14,7 +14,7 @@ void print_all(stack_t **stack, unsigned int line_nu)
 	if (stack == NULL || *stack == NULL)
 		exit(EXIT_FAILURE);
 	p = *stack;
-	while (p)
+	while (p && p->next)
 	{
 		printf("%d\n", p->n);
 		p = p->next;
