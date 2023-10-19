@@ -34,5 +34,5 @@ int push_item(stack_t **stack, char *value)
 	if (*stack)
 		(*stack)->prev = new_node;
 	*stack = new_node;
-	return 0;
+	return (0);
 }
