@@ -10,7 +10,6 @@ void readf(FILE *fp, stack_t **stack)
 	size_t lin = 0;
 	char *buffer = NULL;
 
-	*stack = NULL;
 	for (i = 1; getline(&buffer, &lin, fp) != -1; i++)
 		linef(i, buffer, stack);
 	free(buffer);
