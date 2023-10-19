@@ -1,4 +1,5 @@
-push 1$
-push 2$
-push 3$
-pall   $
+#                push -99
+push               4
+        push 99 03 kk
+                          pall     f              p 
+
