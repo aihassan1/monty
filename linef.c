@@ -13,7 +13,9 @@ void linef(unsigned int lin, char *buffer, stack_t **stack)
 	instruction_t array[] = {
 		{"pall", print_all}, {"add", add},
 		{"pint", pint}, {"pop", pop}, {"swap", swap},
-		{"nop", nop}, {NULL, NULL}};
+		{"nop", nop}, {"sub", sub}, {"div", diiv},
+		{"mul", mul}, {"mod", mood}, {"pchar", pchar},
+		{NULL, NULL}};
 
 	opcode = strtok(buffer, "\n ");
 	if (opcode == NULL || opcode[0] == '#')
